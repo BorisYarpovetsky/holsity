@@ -36,7 +36,6 @@
         "A B C C"
         "A D E F";
         @media screen and (max-width: 991px) {
-<<<<<<< HEAD
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
             "A B C"
@@ -61,9 +60,6 @@
             "D"
             "E"
             "F";
-=======
-            
->>>>>>> 5bfa0ac52cf731f5271f9ea6212795d8b59096c6
         }
     }
 
