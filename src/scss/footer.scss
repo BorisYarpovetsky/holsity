@@ -1,0 +1,117 @@
+.footer {
+    margin-top: 60px;
+    border-top: 1px solid #E5E5E5;
+
+    // .footer__wrapper
+
+    &__wrapper {
+        display: grid;
+        padding: 26px 0 0 0;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 35px;
+        row-gap: 30px;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: repeat(2, 1fr);            
+        }
+        @media screen and (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);            
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+        flex: 0 0 auto;
+    }
+
+    // .footer__logo-link
+
+    &__logo-link {    
+    }
+
+    // .footer__logo-img
+
+    &__logo-img {
+        display: block;
+        width: 187px;
+        height: 64px;
+    }
+
+    // .footer__phone
+
+    &__phone {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 25px;
+        a {
+            color: #404040;
+            text-decoration: none;
+        }      
+    }
+
+    // .footer__social
+
+    &__social {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    // .footer__social-link
+
+    &__social-link {
+        margin-right: 17px;
+    }
+
+    // .footer__props
+
+    &__props {
+        font-size: 15px;
+        line-height: 25px;
+        color: #404040;
+    }
+
+    // .footer__nav
+
+    &__nav {
+        flex: 1 1 auto;
+        list-style: none;
+    }
+
+    // .footer__nav-item
+
+    &__nav-item {
+    }
+
+    // .footer__nav-link
+
+    &__nav-link {
+        font-size: 15px;
+        line-height: 30px;
+        color: #404040;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            transition: all 0.5s;
+        }
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+        margin-top: 30px;
+        border-top: 1px solid #E5E5E5;
+        padding: 18px 40px 18px 40px;
+    }
+
+    // .footer__copyright-text
+
+    &__copyright-text {
+        font-size: 13px;
+        line-height: 18px;  
+        text-align: center;
+        color: #404040;
+    }
+}
