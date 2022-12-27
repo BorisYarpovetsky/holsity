@@ -6,19 +6,113 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        column-gap: 35px;
         @media screen and (max-width: 991px) {
             grid-template-columns: repeat(3, 1fr);
         }
         @media screen and (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
         }
+        @media screen and (max-width: 576px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     // .short-item__main-title
 
     &__main-title {
-
         border-bottom: 0px;
+    }
+
+     // .index-catalog__banner
+
+     &__banner {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    // .index-catalog__banner-link
+
+    &__banner-link {
+        display: flex;
+        background: #142840;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 294px;
+        color: #FFFFFF;
+        text-decoration: none;
+        @media screen and (max-width: 768px) {
+           flex-direction: column;
+        }
+    }
+
+    // .index-catalog__banner-content
+
+    &__banner-content {
+        flex: 1 1 auto;
+        padding-left: 91px;
+        min-width: 500px;
+        padding-right: 40px;
+        @media screen and (max-width: 991px) {
+            min-width: 350px;
+            padding-left: 40px;            
+        }
+        @media screen and (max-width: 768px) {
+           min-width: 100%;   
+           padding-left: 25px;
+           padding-right: 25px;     
+        }
+    }
+
+    // .index-catalog__banner-title
+
+    &__banner-title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 35px;
+        color: #FFFFFF;
+        text-decoration: none;
+        @media screen and (max-width: 991px) {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        @media screen and (max-width: 768px) {
+            padding-top: 20px;
+            font-size: 30px;
+            line-height: 35px;
+         }
+    }
+
+    // .index-catalog__banner-text
+
+    &__banner-text {
+        padding-top: 38px;
+        font-size: 30px;
+        line-height: 35px;
+        @media screen and (max-width: 991px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        @media screen and (max-width: 768px) {
+            padding-top: 20px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    // .index-catalog__banner-img
+
+    &__banner-img {
+        flex: 1 1 auto;
+        max-width: 600px;
+        display: block;
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        img {
+            width: 100%;
+        }
     }
 }
