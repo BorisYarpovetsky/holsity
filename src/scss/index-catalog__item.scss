@@ -1,0 +1,24 @@
+.index-catalog {
+    margin-top: 70px;
+
+    // .index-catalog__wrapper
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 35px;
+        @media screen and (max-width: 991px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // .short-item__main-title
+
+    &__main-title {
+
+        border-bottom: 0px;
+    }
+}
