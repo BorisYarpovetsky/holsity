@@ -1,0 +1,22 @@
+.breadcrumbs {
+
+    // .breadcrumbs__wrapper
+
+    &__wrapper {
+        font-size: 14px;
+        line-height: 35px;
+        color: #1E1E1E;
+        padding-bottom: 25px;
+        a {
+            text-decoration: none;
+            color: #1E1E1E;
+            &:hover {
+                text-decoration: underline;
+                transition: all 0.5s;
+            }
+        }
+        span {
+            font-weight: 500;
+        }
+    }
+}

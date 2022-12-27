@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecity</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_breadcrumbs.html')
+
+    <section class="category-page">
+        <div class="container">
+            <h1 class="category-page__title">Холодильники</h1>
+            <div class="category-page__mini-filter">
+                <a href="#">Инверторные</a>
+                <a href="#">Инверторные с дисплеем</a>
+                <a href="#">Недорогие</a>
+                <a href="#">Ширина 50 см</a>
+                <a href="#">Ещё</a>
+            </div>
+            <div class="category-page__wrapper">
+                <div class="category-page__filter"></div>
+                <div class="category-page__content"></div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+    @@include('_index-start.html')
+    @@include('_footer.html')
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
