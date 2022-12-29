@@ -26,8 +26,12 @@
                 <a href="#">Ещё</a>
             </div>
             <div class="category-page__wrapper">
-                <div class="category-page__filter"></div>
-                <div class="category-page__content"></div>
+                <div class="category-page__filter">
+                    @@include('_category-filter.html')
+                </div>
+                <div class="category-page__content">
+                    @@include('_category-items.html')
+                </div>
             </div>
         </div>
     </section>
