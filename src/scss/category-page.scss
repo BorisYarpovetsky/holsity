@@ -45,6 +45,9 @@
         flex: 0 0 auto;
         width: 338px;
         min-width: 338px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     // .category-page__content

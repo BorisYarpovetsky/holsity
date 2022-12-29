@@ -1,0 +1,207 @@
+.category-filter {
+    padding-right: 40px;
+
+    // .category-filter__title
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 35px;
+        color: #1E1E1E;
+        position: relative;
+    }
+    
+    // .category-filter__title-open
+
+    &__title-open {
+        cursor: pointer;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 15px;
+            z-index: 1;
+            width: 10px;
+            height: 8px;
+            background-image: url('../img/arrow-botton-2.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+    // .category-filter__more
+
+    &__more {
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 35px;
+        color: #437FC8;
+    }
+
+    // .category-filter__more-link
+
+    &__more-link {
+        text-decoration: none;
+        color: #437FC8;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .category-filter__result
+
+    &__result {
+        display: flex;
+        padding: 2px;
+        background: #E5E5E5;
+        border-radius: 5px;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    // .category-filter__result-name
+
+    &__result-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 35px;
+        color: #404040;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    // .category-filter__result-clear
+
+    &__result-clear {
+        flex: 0 0 auto;
+        display: block;
+        width: 58px;
+        height: 58px;
+        border-left: 1px solid #999999;
+        background-image: url('../img/clear-filter.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+     // .category-filter__block
+
+    &__block {
+        padding-top: 10px;
+        padding-bottom: 35px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 35px;
+        color: #1E1E1E;
+    }
+    
+     // .category-filter__all-filter-position
+
+    &__all-filter-position {
+        display: block;
+        margin: 10px auto 0px auto;
+        width: 100%;
+        max-width: 257px;
+        text-align: center;
+        border: 1px solid #CECECE;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 35px;
+        color: #404040;
+        text-decoration: none;
+        margin-top: 10px;
+        &:hover {
+            background-color: #CECECE;
+            color: #fff;
+            transition: all 0.5s;
+        }
+        background-image: url('../img/arrow-riaght.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    input[type="text"] {
+        display: inline-block;
+        border: 1px solid #D4D4D4;
+        min-width: 98px;
+        width: 98px;
+        height: 34px;
+        border-radius: 5px;
+        background-color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: #6E6E6E;
+        text-align: center;
+    }
+
+    // .category-filter__range
+
+    &__range {
+        position: relative;
+        margin: 20px 0 20px 0;
+        height: 23px;
+    }
+
+    // .category-filter__line
+
+    &__line {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #E5E5E5;
+        transform: translateY(-50%);
+    }
+
+    // .category-filter__active-line
+
+    &__active-line {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        width: 80%;
+        height: 2px;
+        background-color: #7FB1ED;
+        z-index: 5;
+        transform: translateY(-50%);
+    }
+
+    // .category-filter__min-num
+
+    &__min-num {
+        position: absolute;
+        display: block;
+        left: 10%;
+        top: 0;
+        z-index: 10;
+        width: 23px;
+        height: 23px;
+        background: #FFFFFF;
+        border: 3px solid #7FB1ED;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    // .category-filter__max-num
+
+    &__max-num {
+        position: absolute;display: block;
+        right: 10%;
+        top: 0;
+        z-index: 10;
+        width: 23px;
+        height: 23px;
+        background: #FFFFFF;
+        border: 3px solid #7FB1ED;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

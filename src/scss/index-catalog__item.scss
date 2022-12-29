@@ -19,11 +19,13 @@
 
     // .short-item__main-title
 
-    &__main-title {
-        border-bottom: 0px;
-    }
+    .short-item {
+        &__main-title {
+            border-bottom: 0;
+        }
+    }    
 
-     // .index-catalog__banner
+    // .index-catalog__banner
 
      &__banner {
         margin-top: 30px;
