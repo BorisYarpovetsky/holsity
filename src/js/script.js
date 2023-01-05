@@ -11,4 +11,27 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 3000
     });
+
+    $('.full-item__slider-mini').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.full-item__slider-full',
+        vertical: true,
+        verticalSwiping: true,
+        centerMode: true,
+        focusOnSelect: true,
+        infinite: true,
+    });
+
+    $('.full-item__slider-full').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.full-item__slider-mini',
+        arrows: false,
+        dots: false,
+        focusOnSelect: true,
+        fade: true,
+        infinite: true,
+    });
 });
