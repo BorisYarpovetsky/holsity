@@ -1,5 +1,6 @@
 @@include('jquery-3.6.2.min.js')
 @@include('slick.js')
+@@include('jquery-ui.js')
 
 $(function() {
     $('.index-slider__wrapper-bg').slick({
@@ -33,5 +34,19 @@ $(function() {
         focusOnSelect: true,
         fade: true,
         infinite: true,
+        dots: false,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+        ]
     });
+
+    $( ".full-item__tabs" ).tabs();
 });
