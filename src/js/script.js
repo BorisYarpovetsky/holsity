@@ -49,4 +49,11 @@ $(function() {
     });
 
     $( ".full-item__tabs" ).tabs();
+
+    $( ".full-item__di-show" ).hide();
+
+    $( ".full-item__di-title" ).on( "click", function() {
+        $( this ).toggleClass('di-active');
+        $( this ).next('.full-item__di-show').slideToggle('slow');
+      });    
 });

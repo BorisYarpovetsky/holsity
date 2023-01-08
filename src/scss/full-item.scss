@@ -483,17 +483,38 @@
         font-size: 18px;
         line-height: 30px;
         color: #1A467C;
-        padding-top: 5px;
+        display: inline-block;
+        padding-right: 25px;
+        cursor: pointer;
         &::before {
             content: '';
             position: absolute;
             left: 0;
-            top: 9px;
+            top: 4px;
             width: 20px;
             height: 23px;
             z-index: 1;
             background-position: left top;
             background-repeat: no-repeat;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 12px;
+            width: 10px;
+            height: 8px;
+            z-index: 1;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-image: url('../img/di-show.svg');
+            transform: rotate(180deg);
+            transition: all .7s;
+        }
+    }
+    &__di-title.di-active {
+        &::after {
+            transform: rotate(0deg);
         }
     }
 
@@ -515,6 +536,16 @@
             color: #437FC8;
             text-decoration-line: underline;
         }
+        label {
+            display: block;
+            padding: 0 0 6px 0px;
+        }
+    }
+
+    // .full-item__garanty-form
+
+    &____garanty-form {
+        padding: 0 0 6px 28px;
     }
 
     // .full-item__di-link
@@ -680,12 +711,27 @@
         @media screen and (max-width: 768px) {
             flex-direction: column;
         }
+        li {
+            margin-right: 25px;
+        }
+        li.ui-tabs-active {
+            position: relative;            
+            &::before {
+                content: '';
+                width: 100%;
+                height: 1px;                
+                background-color: #FC443B;
+                position: absolute;
+                left: 0;
+                bottom: -11px;
+                z-index: 2;
+            }
+        }
     }
 
     // .full-item__tabs-nav-item
 
     &__tabs-nav-item {
-        margin-right: 25px;
         @media screen and (max-width: 768px) {
             width: 100%;
         }
@@ -699,10 +745,6 @@
         &.ui-tabs-active a {
             font-size: 30px;
             color: #1E1E1E;
-            border-bottom: 1px solid #FC443B;
-            @media screen and (max-width: 768px) {
-                border-bottom: none
-            }
         }
     }
 
@@ -723,7 +765,7 @@
         display: flex;
         justify-content: space-between;
         @media screen and (max-width: 768px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
     }
 
@@ -842,6 +884,10 @@
     &__reviews-right {
         flex: 0 0 auto;
         width: 352px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
 
     // .full-item__reviews-info
@@ -850,6 +896,9 @@
         border: 1px solid #E5E5E5;
         border-radius: 5px;
         padding: 40px 35px 57px 40px;
+        @media screen and (max-width: 576px) {
+            padding: 20px 15px 20px 25px;
+        }
     }
 
     // .full-item__reviews-info-head

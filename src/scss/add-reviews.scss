@@ -1,0 +1,102 @@
+.add-reviews {
+    margin-bottom: 70px;
+
+    // .add-reviews__title
+
+    &__title {
+    }
+
+    // .add-reviews__form
+
+    &__form {
+        width: 100%;
+        max-width: 926px;
+    }
+
+    // .add-reviews__form-item
+
+    &__form-item {
+        margin-bottom: 24px;
+        textarea {
+            display: block;
+            width: 100%;
+            height: 160px;
+            border: 1px solid #E5E5E5;
+            border-radius: 5px;
+            outline: none;
+            resize: none;
+            padding: 20px;
+        }
+    }
+
+    // .add-reviews__form-label
+
+    &__form-label {
+        font-size: 24px;
+        line-height: 35px;
+        color: #1E1E1E;
+    }
+
+    // .add-reviews__star-rating
+
+    &__star-rating {
+        display: flex;
+        img {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin-right: 5px;
+        }
+    }
+
+    // .add-reviews__add-photo
+
+    &__add-photo {
+        font-size: 24px;
+        line-height: 35px;
+        color: #1E1E1E;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        &::before {
+            content: '';
+            display: block;
+            width: 55px;
+            height: 55px;
+            z-index: 1;
+            background-color: #E5E5E5;
+            border-radius: 5px;
+            background-image: url('../img/add-photo-icon.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 27px 27px;
+        }
+        span {
+            display: block;
+            padding-left: 15px;
+        }
+    }
+
+    // .add-reviews__form-submit
+
+    &__form-submit {
+        display: block;
+        width: 100%;
+        max-width: 281px;
+        padding: 13px 15px;
+        border: 2px solid #FD433C;
+        background-color: #FD433C;
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+        cursor: pointer;
+        &:hover {
+            background-color: #FFFFFF;
+            color: #FD433C;
+            transition: all .7s;
+        }
+    }
+}
