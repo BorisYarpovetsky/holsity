@@ -33,6 +33,36 @@ body {
     margin-bottom: 33px;
 }
 
+.arrow-top-page {
+    display: none;
+    display: block;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 1000;
+    width: 76px;
+    height: 76px;
+    transform: ease .3s;
+    background-image: url('../img/arrow-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px 14px;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+    @media screen and (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        bottom: 15px;
+        background-size: 17px 7px;
+    }
+}
+
 @import "slick";
 @import "header";
 @import "index-slider";
