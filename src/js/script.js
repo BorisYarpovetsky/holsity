@@ -55,5 +55,14 @@ $(function() {
     $( ".full-item__di-title" ).on( "click", function() {
         $( this ).toggleClass('di-active');
         $( this ).next('.full-item__di-show').slideToggle('slow');
-      });    
+    });
+    
+    $( ".header__search-input" ).on( "focus", function() {
+        $( this ).parent('.header__search').addClass('header__search-active');
+    });
+
+    $( ".header__search-input" ).on( "focusout", function() {
+        $( this ).parent('.header__search').removeClass('header__search-active');
+    });
+
 });
