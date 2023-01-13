@@ -1,5 +1,7 @@
 .category-items {
 
+    // .category-items__wrapper
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -87,6 +89,9 @@
         display: flex;
         align-items: center;
         margin-left: auto;
+        @media screen and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
     }
 
     // .category-items__view-popular
@@ -154,5 +159,24 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
+    }
+}
+
+.category-items__wrapper.active-list-style-view {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.short-item__item-list-style {
+    display: none;
+    width: 100%;
+    align-items: center;
+}
+
+.category-items__wrapper.active-list-style-view {
+    .short-item__item-block-style {
+        display: none;
+    }
+    .short-item__item-list-style {
+        display: flex;
     }
 }

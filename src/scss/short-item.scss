@@ -44,6 +44,9 @@
         border-top: 1px solid #E5E5E5;
         padding: 27px 17px 27px 17px;
         position: relative;
+        @media screen and (max-width: 768px) {
+            padding: 27px 0px 27px 0px;
+        }
         &:hover {
             background: #FFFFFF;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -67,6 +70,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     // .short-item__lt-info
@@ -90,8 +94,12 @@
         color: #FFFFFF;
         background-color:  #55BB9F;
         border-radius: 5px;
-        padding: 5px 10px 5px 10px;
+        padding: 3px 10px 3px 10px;
         margin-bottom: 8px;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            padding: 2px 5px 2px 5px;
+        }
     }
 
     // .short-item__present
@@ -106,6 +114,10 @@
         border-radius: 5px;
         padding: 5px 10px 5px 10px;
         margin-bottom: 8px;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            padding: 2px 5px 2px 5px;
+        }
     }
 
     // .short-item__lb-info
@@ -172,6 +184,10 @@
         border-radius: 5px;
         padding: 5px 10px 5px 10px;
         margin-top: 8px;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            padding: 2px 5px 2px 5px;
+        }
     }
 
     // .short-item__img
@@ -199,6 +215,10 @@
         line-height: 25px;
         color: #404040;
         padding-right: 15px;
+        flex: 0 0 auto;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
     }
 
     // .short-item__price-old
@@ -208,6 +228,10 @@
         font-size: 14px;
         line-height: 25px;
         color: #6E6E6E;
+        flex: 0 0 auto;
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+        }
     }
 
     // .short-item__item-title
@@ -228,7 +252,7 @@
         text-decoration: none;
         &:hover {
             text-decoration: underline;
-            transition: all 0.5s;
+            transition: all 0.7s;
         }
     }
 
@@ -288,6 +312,7 @@
 
     &__add-cart {
         display: inline-block;
+        border: 2px solid #437FC8;
         background-color: #437FC8;
         border-radius: 5px;
         cursor: pointer;
@@ -297,6 +322,11 @@
         color: #FFFFFF;
         text-decoration: none;
         padding: 10px 30px;
+        &:hover {
+            background-color: #FFFFFF;
+            color: #437FC8;
+            transition: all .7s;
+        }
     }
 
     // .short-item__add-cart-disable
@@ -310,5 +340,158 @@
         line-height: 25px;
         color: #FFFFFF;
         padding: 10px 30px;
+    }
+
+    // .short-items__ls-img
+
+    &__ls-img {
+        width: 100%;
+        max-width: 200px;
+        flex: 0 1 auto;
+        @media screen and (max-width: 768px) {
+            max-width: 150px;
+        }
+    }
+
+    // .short-items__ls-img-link
+
+    &__ls-img-link {
+        display: flex;
+        position: relative;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+
+    // .short-items__ls-content
+
+    &__ls-content {
+        flex: 1 1 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        @media screen and (max-width: 1200px) {
+           padding-left: 0;
+           padding-bottom: 15px;
+        }
+    }
+
+    // .short-items__ls-actions
+
+    &__ls-actions {
+        display: flex;
+        @media screen and (max-width: 1200px) {
+           position: absolute;
+           left: 10px;
+           top: 15px;
+           z-index: 1;
+        }
+        span {
+            margin-right: 20px;
+            @media screen and (max-width: 991px) {
+                margin-right: 10px;
+            }
+        }
+        span.short-item__discount {
+            margin-top: 0px;
+            padding: 3px 10px 3px 10px;
+            margin-bottom: 8px;
+        }
+    }
+
+    // .short-item__ls-title
+
+    &__ls-title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 10px;
+        }
+    }
+
+    // .short-item__ls-link
+
+    &__ls-link {
+        font-size: 18px;
+        line-height: 22px;
+        color: #1E1E1E;
+        text-decoration: none;        
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .short-item__ls-rating
+
+    &__ls-rating {
+        display: flex;
+        align-items: center;
+    }
+
+    // .short-item__ls-buy
+
+    &__ls-buy {
+        flex: 0 0 auto;
+    }
+
+     // .short-item__ls-buttons
+
+     &__ls-buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        .short-item__add-link {
+            width: 20px;
+            height: 20px;
+            background-position: 20px 20px;
+            margin-bottom: 0px;
+            margin-right: 22px;
+            @media screen and (max-width: 991px) {
+                margin-right: 10px;
+            }
+        }
+
+        .short-item__add-compare {
+            width: 20px;
+            height: 20px;
+            background-position: 13px 20px;
+            margin-right: 22px;
+            @media screen and (max-width: 991px) {
+                margin-right: 0;
+            }
+            &.short-item__add-compare-active {
+                background-position: 20px 20px;
+            }
+        }
+    }
+
+    // .short-item__ls-wrapper
+
+    &__ls-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex: 1 0 auto;
+        @media screen and (max-width: 1200px) {
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    }
+
+    // .short-item__ls-buttons-list
+
+    &__ls-buttons-list {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 991px) {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
     }
 }

@@ -108,4 +108,16 @@ $(function() {
         activeItemclick(clickItem)
     });
 
+    $('#line-view-style-button').click(function(){
+        $(this).addClass('active');
+        $('#block-view-style-button').removeClass('active');        
+        $('#item-list-style').addClass('active-list-style-view');
+	});
+
+    $('#block-view-style-button').click(function(){
+        $(this).addClass('active');
+        $('#line-view-style-button').removeClass('active');        
+        $('#item-list-style').removeClass('active-list-style-view')
+	});
+
 });
