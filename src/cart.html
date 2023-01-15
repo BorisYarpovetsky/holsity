@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecity</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_breadcrumbs.html')
+
+    <section class="cart-page">
+        <div class="container">
+            <h1 class="cart-page__title">Корзина</h1>
+            <div class="cart-page__wrapper">
+                <div class="cart-page__left">
+                    @@include('_cart-item.html')
+                    @@include('_cart-item.html')
+                    @@include('_cart-item.html')
+                    
+                    
+                    <div class="cart-page__get-delivery">
+                        <h3 class="h3-title cart-page__get-delivery-title">Способ доставки</h3>
+                        <div class="cart-page__gd-item">
+                            <label class="cart-page__gd-item-label">
+                                <input type="radio" name="d">
+                                <span>Доставка курьером</span>
+                                <div class="cart-page__gd-calendar">04.02.2021</div>
+                            </label>
+                        </div>
+                        <div class="cart-page__gd-item">
+                            <label class="cart-page__gd-item-label">
+                                <input type="radio" name="d">
+                                <span>Самовывоз</span>
+                                <div class="cart-page__gd-calendar">04.02.2021</div>
+                            </label>                            
+                        </div>
+                        <div class="cart-page__pickup">
+                            <div class="cart-page__pickup-item">
+                                <label>
+                                    <input type="radio" name="s"><span>г. Минск, ул. Набережная 28, пом 54</span>
+                                </label>
+                            </div>
+                            <div class="cart-page__pickup-item">
+                                <label>
+                                    <input type="radio" name="s"><span>г. Минск, ул. Набережная 28, пом 54</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-page__get-pay">
+                        <h3 class="h3-title cart-page__get-pay-title">Способ оплаты</h3>
+                        <div class="cart-page__gp-wrapper">
+                            <label class="cart-page__gp-label">
+                                <input type="radio" name="p">
+                                <span>Оплата онлайн</span>
+                            </label>
+                            <label class="cart-page__gp-label">
+                                <input type="radio" name="p">
+                                <span>Оплата при получении картой</span>
+                            </label>
+                            <label class="cart-page__gp-label">
+                                <input type="radio" name="p">
+                                <span>Оплата при получении наличными</span>
+                            </label>
+                        </div>                
+                    </div>
+                    <div class="cart-page__get-contacts">
+                        <h3 class="h3-title cart-page__get-contacts-title">Контактные данные</h3>
+                        <div class="cart-page__gc-forms">
+                            <div class="cart-page__gc-input-block">
+                                <div class="cart-page__gc-item-input">
+                                    <label class="cart-page__gc-label">Телефон</label>
+                                    <input class="cart-page__gc-input" type="text">
+                                </div>
+                                <div class="cart-page__gc-item-input">
+                                    <label class="cart-page__gc-label">Email</label>
+                                    <input class="cart-page__gc-input" type="text">
+                                </div>
+                                <div class="cart-page__gc-item-input">
+                                    <label class="cart-page__gc-label">Имя</label>
+                                    <input class="cart-page__gc-input" type="text">
+                                </div>
+                                <div class="cart-page__gc-item-input">
+                                    <label class="cart-page__gc-label">Фамилия</label>
+                                    <input class="cart-page__gc-input" type="text">
+                                </div>
+                                <div class="cart-page__gc-item-input">
+                                    <label class="cart-page__gc-label">Город</label>
+                                    <input class="cart-page__gc-input" type="text">
+                                </div>
+                                <div class="cart-page__gc-item-input">
+                                    <label class="cart-page__gc-label">Адрес</label>
+                                    <input class="cart-page__gc-input" type="text">
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="cart-page__gc-forms">
+                        <div class="cart-page__gc-item-check">
+                            <label>
+                                <input type="checkbox"> Нужен подъем
+                            </label>
+                            <label>
+                                <input type="checkbox"> Нужна установка
+                            </label>
+                            <label>
+                                <input type="checkbox"> Нужна утилизация
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cart-page__gc-item-textarea">
+                        <label class="cart-page__gc-label">Комментарий</label>
+                        <textarea name=""></textarea>
+                    </div>
+                </div>
+                <div class="cart-page__right">
+                    <div class="cart-page__info">
+                        <div class="cart-page__total-price">
+                            <p>Итого</p>
+                            <p>42 900 ₽</p>
+                        </div>
+                        <div class="cart-page__total-item">
+                            <p>Товаров, 3 шт</p> <p>65 900 ₽</p>
+                        </div>
+                        <div class="cart-page__total-item">
+                            <p>Скидка</p> <p><span class="cart-page__ti-red">15 000 ₽</span></p>
+                        </div>
+                        <div class="cart-page__total-item">
+                            <p>Доставка</p> <p>бесплатно</p>
+                        </div>
+                        <div class="cart-page__delivery-date">
+                            <p><b>Доставка</b></p>
+                            <p>04.02.2021 &nbsp;&nbsp;&nbsp;10:00-18:00</p>
+                        </div>
+                        <div class="cart-page__delivery-button">
+                            <button class="cart-page__delivery-button-link" >Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+
+ 
+    
+    @@include('_footer.html')
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
