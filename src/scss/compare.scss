@@ -3,6 +3,11 @@
     // .compare-page__title
 
     &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        color: #1E1E1E;
+        margin-bottom: 20px;
     }
 
     // .compare-page__wrapper
@@ -44,10 +49,11 @@
             cursor: pointer;
         }
         .slick-next {
-            right: 13px;
+            right: 10px;
+            transform: rotate(-180deg);
         }
         .slick-prev {
-            left: 13px;
+            left: 10px;
         }
         @media screen and (max-width: 1200px) {
             width: 71%;
@@ -78,7 +84,7 @@
      &__image {
         height: 360px;
         border-left: 1px solid #C4C4C4;
-        padding: 0 35px 35px 35px;
+        padding: 10px 35px 35px 35px;
     }
 
     // .compare-page__item-img
@@ -89,17 +95,28 @@
         height: auto;
         margin: 0 auto;
         max-width: 100%;
-        max-height: 250px;
+        max-height: 220px;
+        margin-bottom: 10px
+    }
+
+    // .compare-page__tech-category-notitle
+
+    &__tech-category-notitle {
+        background-color: #EFF3F9;
+        padding: 12px 18px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1E1E1E;
     }
 
     // .compare-page__tech-category-title
 
     &__tech-category-title {
-    }
-
-    // .compare-page__tech-title
-
-    &__tech-title {
+        background-color: #EFF3F9;
+        padding: 12px 18px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1E1E1E;
     }
 
     // .compare-page__item
@@ -160,30 +177,32 @@
         display: flex;
     }
 
-    // .compare-page__tech-category-notitle
+    // .compare-page__tech-title
 
-    &__tech-category-notitle {
+    &__tech-title { 
+        padding: 12px 18px; 
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E1E1E;           
+        border-top: 1px solid #C4C4C4;   
     }
 
     // .compare-page__tech-param
 
     &__tech-param {
+        padding: 12px 18px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E1E1E;
+        border-top: 1px solid #C4C4C4;       
+        border-left: 1px solid #C4C4C4;
+    }
+
+    .compare-page__tech-category-title + .compare-page__tech-title {
+        border-top: 0px solid #C4C4C4; 
+    }
+
+    .compare-page__tech-category-notitle + .compare-page__tech-param {
+        border-top: 0px solid #C4C4C4; 
     }
 }
-// .short-item {
-
-//     // .short-item__item-rating
-
-//     &__item-rating {
-//     }
-
-//     // .short-item__item-comment
-
-//     &__item-comment {
-//     }
-
-//     // .short-item__comment-link
-
-//     &__comment-link {
-//     }
-// }

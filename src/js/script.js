@@ -143,4 +143,21 @@ $(function() {
         ]
     });
 
+    function compareResize() {
+        let lineNum = $('.compare-page__line-num');
+        let itmTable;
+        let arr = [];
+        let maxHeight;
+        for (let z = 0; z < lineNum.length; z++) {
+            itmTable = $(".itm-"+z);
+            for (i = 0; i < itmTable.length; i++) {
+                getHeight = itmTable.eq(i).height();
+                arr[i] = getHeight;
+            }
+            maxHeight = Math.max.apply(null, arr) + 24;
+            itmTable.css({"height":maxHeight+'px'});
+        }
+    }
+    compareResize();
+
 });
