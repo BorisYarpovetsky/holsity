@@ -48,7 +48,6 @@ $(function() {
         focusOnSelect: true,
         fade: true,
         infinite: true,
-        dots: false,
         responsive: [
             {
               breakpoint: 768,
@@ -119,5 +118,29 @@ $(function() {
         $('#line-view-style-button').removeClass('active');        
         $('#item-list-style').removeClass('active-list-style-view')
 	});
+
+    $('.compare-page__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        infinite: false,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
+              },
+        ]
+    });
 
 });

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecity</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_breadcrumbs.html')
+
+    <section class="compare-page">
+        <div class="container">
+            <h1 class="compare-page__title">Сравнение товаров</h1>
+            <div class="compare-page__wrapper">
+                <div class="compare-page__char-list">
+                    <div class="compare-page__no-image">
+                        <label>
+                            <input type="checkbox"> Скрыть одинаковые параметры
+                        </label>  
+                    </div>
+                    <div class="compare-page__tech-category-title">
+                        Основные
+                    </div>
+                    <div class="compare-page__tech-title">Исполнение</div>
+                    <div class="compare-page__tech-title">Тип</div>
+                    <div class="compare-page__tech-title">Цвет</div>
+                    <div class="compare-page__tech-category-title">
+                        Технические характеристики
+                    </div>  
+                    <div class="compare-page__tech-title">Исполнение</div>
+                    <div class="compare-page__tech-title">Тип</div>
+                    <div class="compare-page__tech-title">Цвет</div>
+                    <div class="compare-page__tech-title">Исполнение</div>
+                    <div class="compare-page__tech-title">Тип</div>
+                    <div class="compare-page__tech-title">Цвет</div>
+                    <div class="compare-page__tech-title">Исполнение</div>
+                    <div class="compare-page__tech-title">Тип</div>
+                    <div class="compare-page__tech-title">Цвет</div> 
+                    <div class="compare-page__tech-category-title">
+                        Основные
+                    </div>
+                    <div class="compare-page__tech-title">Исполнение</div>
+                    <div class="compare-page__tech-title">Тип</div>
+                    <div class="compare-page__tech-title">Цвет</div>                         
+                </div>  
+                <div class="compare-page__slider">
+                    @@include('_compare-item.html')
+                    @@include('_compare-item.html')            
+                </div>                    
+            </div>            
+        </div>
+    </section>
+
+
+ 
+    
+    @@include('_footer.html')
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
