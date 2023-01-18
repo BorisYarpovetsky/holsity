@@ -16,7 +16,10 @@
 
     <section class="compare-page">
         <div class="container">
-            <h1 class="compare-page__title">Сравнение товаров</h1>
+            <div class="compare-page__title-wrapper">
+                <h1 class="compare-page__title">Сравнение товаров</h1>
+                <a class="compare-page__clear-list" href="#">Очистить сравнение</a>
+            </div>
             <div class="compare-page__wrapper">
                 <div class="compare-page__char-list">
                     <div class="compare-page__no-image">
@@ -47,12 +50,14 @@
                     </div>
                     <div class="compare-page__tech-title compare-page__line-num itm-15">Исполнение</div>
                     <div class="compare-page__tech-title compare-page__line-num itm-16">Тип</div>
-                    <div class="compare-page__tech-title compare-page__line-num itm-17">Цвет</div>                         
+                    <div class="compare-page__tech-title compare-page__line-num itm-17">Цвет</div> 
+                    <div class="compare-page__image"></div>                        
                 </div>  
                 <div class="compare-page__slider">
                     @@include('_compare-item.html')
                     @@include('_compare-item.html')          
-                </div>                    
+                </div>  
+                                
             </div>            
         </div>
     </section>
