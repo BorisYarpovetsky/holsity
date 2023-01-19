@@ -1,0 +1,90 @@
+.content-page {
+
+    // .content-page__title
+
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        color: #1E1E1E;
+        margin-bottom: 30px;
+    }
+
+    // .content-page__wrapper
+
+    &__wrapper {
+        font-size: 16px;
+        line-height: 25px;
+        color: #1E1E1E;
+
+        p {
+            margin-bottom: 20px;
+        }
+    
+        h1, h2, h3, h4 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    
+        h1 img, h2 img, h3 img, h4 img {
+            display: block;
+            margin-right: 12px;
+        }
+    
+        ul {
+            display: block;
+            margin-bottom: 20px;
+            li {
+                position: relative;
+                display: block;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                &::before {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: #437FC8;
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    z-index: 1;
+                    border-radius: 50%;
+                }
+            }
+        }
+    
+        ol {
+            display: block;
+            margin-bottom: 20px;
+            padding-left: 25px;
+            li {
+                padding-left: 10px;
+            }
+        }
+    }    
+
+    .content-btn {
+        display: inline-block;
+        width: 100%;
+        max-width: 335px;
+        border: 2px solid #437FC8;
+        background-color: #437FC8;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        padding: 15px 15px 15px 15px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        &:hover {
+            background-color: #FFFFFF;
+            color: #437FC8;
+            transition: all 0.7s;
+        }
+    }
+}
