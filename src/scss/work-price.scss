@@ -1,0 +1,139 @@
+.work-price {
+    width: 100%;
+    max-width: 1044px;
+
+    // .work-price__main-title
+
+    &__main-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #1E1E1E;
+        margin-bottom: 16px;
+    }
+
+    // .work-price__header
+
+    &__header {
+        border-bottom: 2px solid #437FC8;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: #1E1E1E;
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+            padding-right: 15px;
+        }
+    }
+
+    // .work-price__header-name
+
+    &__header-name {
+        padding-left: 30px;
+        padding-right: 30px;
+        @media screen and (max-width: 768px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    // .work-price__header-param
+
+    &__header-param {
+        flex: 0 1 200px;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            flex: 0 1 auto;
+        }
+    }
+
+    // .work-price__item
+
+    &__item {
+        border-top: 1px solid #C4C4C4;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        font-size: 15px;
+        line-height: 22px;
+        color: #1E1E1E;
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+
+    // .work-price__item-name
+
+    &__item-name {
+        padding-left: 30px;
+        padding-right: 30px;
+        @media screen and (max-width: 768px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    // .work-price__item-param
+
+    &__item-param {
+        flex: 0 1 200px;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            flex: 0 1 auto;
+        }
+    }
+
+    // .work-price__open-category
+
+    &__open-category {
+        cursor: pointer;
+        background-color: #EFF3F9;
+        padding: 10px 30px 10px 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E1E1E;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            z-index: 1;
+            width: 13px;
+            height: 10px;
+            background-image: url('../img/arrow-price-table-install.svg');
+            background-position: left top;
+            background-repeat: no-repeat;
+            transform: translateY(-50%) rotate(0deg);
+            transition: all .7s;
+        }
+        &.active {
+            &::after {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            padding: 10px 15px 10px 15px;
+            font-size: 13px;
+        }
+    }
+
+    // .work-price__category
+
+    &__category {
+    }
+}
+
+.work-price__category .work-price__item:first-child,
+.work-price__header + .work-price__item {
+    border-top: 0;
+}

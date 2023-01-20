@@ -1,4 +1,4 @@
-# Проект Elecity интернет-магазин
+# Проект интернет-магазин Elecity
 
 Установка:
 1. git clone https://github.com/courses2021/elecity
