@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecity</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_breadcrumbs.html')
+
+    <section class="contacts-page">
+        <div class="container">
+            <h1 class="contacts-page__title">Контакты</h1>
+            <div class="contacts-page__wrapper">
+                <div class="contacts-page__category">
+                    <h2 class="contacts-page__category-title">Отдел продаж</h2>
+                    <div class="contacts-page__item">
+                        <h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/contact-icon-1.svg" alt=""> <span>График работы отдела продаж</span></h3>
+                        <div class="contacts-page__item-text">
+                            <p>9:00 - 22:00 (пн-пт)<br>
+                            9:00 - 22:00 (сб-вс)</p>
+                            <p class="contacts-page__item-text-bold"><b>Оформление заказов через сайт круглосуточно</b></p>
+                        </div>
+                    </div>
+                    <div class="contacts-page__item">
+                        <h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/contact-icon-2.svg" alt=""> 
+                            <span>
+                                Телефоны
+                            </span>
+                            <a href="#"><img class="contacts-page__item-img" src="img/viber.svg" alt="Viber"></a>
+                            <a href="tg://join?"><img class="contacts-page__item-img" src="img/telegram.svg" alt="Telegram"></a>
+                        </h3>
+                        <div class="contacts-page__item-text">
+                            Для оформления заказов и консультаций: <a href="tel:+74951509555">+7 (495) 150-95-55</a> добавочный 1
+                        </div>
+                    </div>
+                    <div class="contacts-page__item">
+                        <h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/contact-icon-3.svg" alt=""> <span>E-mail</span></h3>
+                        <div class="contacts-page__item-text">
+                            <p><a href="mailto:info@elecity.ru">info@elecity.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="contacts-page__item">
+                        <h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/contact-icon-4.svg" alt=""> <span>Безналичный расчет</span></h3>
+                        <div class="contacts-page__item-text">
+                            <p>Для покупки по безналичному расчету отправляйте запрос на <a href="mailto:bn@elecity.ru">bn@elecity.ru</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-page__category">
+                    <h2 class="contacts-page__category-title">Рекламационный отдел</h2>
+                    <div class="contacts-page__item">
+                        <h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/contact-icon-1.svg" alt=""> <span>График работы отдела продаж</span></h3>
+                        <div class="contacts-page__item-text">
+                            <p>9:00 - 22:00 (пн-пт)<br>
+                            9:00 - 22:00 (сб-вс)</p>
+                            <p><b>Оформление заказов через сайт круглосуточно</b></p>
+                        </div>
+                    </div>
+                    <div class="contacts-page__item">
+                        <h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/contact-icon-2.svg" alt=""> 
+                            <span>
+                                Телефоны
+                            </span>
+                            <a href="#"><img class="contacts-page__item-img" src="img/viber.svg" alt="Viber"></a>
+                            <a href="tg://join?"><img class="contacts-page__item-img" src="img/telegram.svg" alt="Telegram"></a>
+                        </h3>
+                        <div class="contacts-page__item-text">
+                            Для оформления заказов и консультаций: <a href="tel:+74951509555">+7 (495) 150-95-55</a> добавочный 1
+                        </div>
+                    </div>
+                    <div class="contacts-page__item">
+                        <h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/contact-icon-3.svg" alt=""> <span>E-mail</span></h3>
+                        <div class="contacts-page__item-text">
+                            <p><a href="mailto:info@elecity.ru">info@elecity.ru</a></p>
+                        </div>
+                    </div>
+                </div>                             
+            </div> 
+            
+            <h3 class="h3-title contacts-page__form-title">Оставить обращение</h3>
+            <div class="contacts-page__form">
+                <div class="contacts-page__form-item">
+                    <label class="contacts-page__form-label">ФИО</label>
+                    <input class="contacts-page__form-text" type="text">
+                </div>
+                <div class="contacts-page__form-item">
+                    <label class="contacts-page__form-label">Телефон</label>
+                    <input class="contacts-page__form-text" type="text">
+                </div>
+                <div class="contacts-page__form-item">
+                    <label class="contacts-page__form-label">Email</label>
+                    <input class="contacts-page__form-text" type="text">
+                </div>
+                <div class="contacts-page__form-item">
+                    <label class="contacts-page__form-label">Выберите отдел</label>
+                    <input class="contacts-page__form-text" type="text">
+                </div>
+                <div class="contacts-page__form-item contacts-page__col-3">
+                    <label class="contacts-page__form-label">Ваше сообщение</label>
+                    <textarea class="contacts-page__form-textarea" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="contacts-page__form-item">
+                    <button class="contacts-page__form-submit" type="submit">Отправить</button>
+                </div>
+            </div>
+            <div class="contacts-page__map">
+                <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.ru/map-widget/v1/?from=tabbar&ll=37.546543%2C55.615970&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY0MTU3NRJA0KDQvtGB0YHQuNGPLCDQnNC%2B0YHQutCy0LAsINCh0L7Qu9C%2B0LLRjNC40L3Ri9C5INC%2F0YDQvtC10LfQtCwgMiIKDakvFkIVwHZeQg%3D%3D&source=serp_navig&z=17.13" width="100%" max-width="1402" height="411" z-index="100"></iframe></div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+    
+    @@include('_footer.html')
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
