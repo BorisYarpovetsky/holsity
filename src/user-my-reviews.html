@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecity</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_breadcrumbs.html')
+
+    <section class="order-list">
+        <div class="container">
+            @@include('_user-menu.html')
+            <h1 class="order-list__title">Мои отзывы</h1>
+            <div class="order-list__wrapper">
+                <div class="order-list__content">
+                    <div class="order-list__item">
+                        <div class="order-list__item-title">
+                            <div class="order-list__my-reviews-num">
+                                5 товаров ждут Вашего отзыва
+                            </div>                            
+                        </div>
+                        <div class="order-list__item-content">
+                            <div class="order-list__my-reviews-wrapper">
+                                <div class="order-list__my-reviews-slider">
+                                    @@include('_order-my-reviews-list.html')
+                                    @@include('_order-my-reviews-list.html')
+                                    @@include('_order-my-reviews-list.html')
+                                    @@include('_order-my-reviews-list.html')
+                                    @@include('_order-my-reviews-list.html')
+                                    @@include('_order-my-reviews-list.html')
+                                    @@include('_order-my-reviews-list.html')
+                                    @@include('_order-my-reviews-list.html')
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @@include('_my-reviews-list.html')
+
+                </div>
+                @@include('_user-info.html')
+            </div>
+        </div>
+    </section>
+
+
+ 
+    
+    @@include('_footer.html')
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
