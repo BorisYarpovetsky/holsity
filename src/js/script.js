@@ -166,4 +166,24 @@ $(function() {
         $(this).next('.work-price__category').slideToggle();
 	});
 
+    $('.order-list__item-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+            {
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1
+                }
+            },
+        ]
+    });
+
 });

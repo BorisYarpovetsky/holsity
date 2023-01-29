@@ -1,0 +1,98 @@
+.user-menu {
+    
+    margin-bottom: 30px;
+
+    // .user-menu__list
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        @media screen and (max-width: 991px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    // .user-menu__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        margin-bottom: 10px;
+        &.user-menu__item-active {
+            .user-menu__link {
+                color: #FC443B;
+                path {
+                    fill: #FC443B;
+                }
+                svg.user-menu__stroke {
+                    line {
+                        stroke: #FC443B;
+                    }
+                }  
+            }
+        }
+    }
+
+    // .user-menu__link
+
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 35px;
+        color: #1E1E1E;
+        svg {
+            margin-right: 8px;
+            path {
+                fill: #1E1E1E;
+            }            
+        }    
+        &:hover {
+            color: #FC443B;
+            transition: .7s;
+            path {
+                fill: #FC443B;
+                transition: .7s;
+            }
+        }  
+        svg.user-menu__stroke {
+            margin-right: 8px;
+            line {
+                stroke: #1E1E1E;
+            }
+        }  
+        &:hover {
+            color: #FC443B;
+            transition: .7s;
+            svg.user-menu__stroke {
+                line {
+                    stroke: #FC443B;
+                    transition: .7s;
+                }
+            }
+        }
+    }
+
+    // .user-menu__num
+
+    &__num {
+        display: inline-block;
+        margin-left: 8px;
+        min-width: 16px;
+        height: 16px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background-color: #FC413C;
+        border-radius: 8px;
+        padding: 0 4px 0 4px;
+    }
+}
