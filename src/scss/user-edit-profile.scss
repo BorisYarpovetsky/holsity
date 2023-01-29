@@ -1,0 +1,234 @@
+.edit-profile {
+
+    // .edit-profile__user-info
+
+    &__user-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    // .edit-profile__ui-img
+
+    &__ui-img {
+        margin-right: 16px;
+        width: 108px;
+        height: 108px;
+        background-color: #EFF3F9;
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: url('../img/user-info-no-picture-icon.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        @media screen and  (max-width: 768px){
+            width: 58px;
+            height: 58px;
+        }
+        img {
+            display: block;
+            width: 108px;
+            height: 108px;
+            @media screen and  (max-width: 768px){
+                width: 58px;
+                height: 58px;
+            }
+            object-fit: cover;
+        }
+    }
+
+    // .edit-profile__ui-title
+
+    &__ui-title {
+    }
+
+    // .edit-profile__ui-name
+
+    &__ui-name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: #1E1E1E;
+        margin-bottom: 14px;
+    }
+
+    // .edit-profile__change-ui
+
+    &__change-ui {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        color: #437FC8;
+        padding: 0 0 0 27px;
+        text-decoration: none;
+        position: relative;
+        &::before {
+            content: '';
+            left: 0;
+            top: 0;
+            z-index: 1;
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            background-image: url('../img/user-info-change-icon.svg');
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 21px 21px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .edit-profile__info
+
+    &__info {
+        display: flex;
+        @media screen and (max-width: 991px){
+            flex-direction: column;
+        }
+    }
+
+    // .edit-profile__left
+
+    &__left {
+        flex: 1 1 auto;
+    }
+
+    // .edit-profile__info-title
+
+    &__info-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #1E1E1E;
+    }
+
+    // .edit-profile__reg-info
+
+    &__reg-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 16px;
+        @media screen and (max-width: 768px){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    // .edit-profile__reg-item
+
+    &__reg-item {
+    }
+
+    // .edit-profile__reg-label
+
+    &__reg-label {
+        font-size: 14px;
+        line-height: 35px;
+        color: #999999;
+    }
+
+    // .edit-profile__reg-data
+
+    &__reg-data {
+        font-size: 18px;
+        line-height: 35px;
+        color: #404040;
+    }
+
+    // .edit-profile__reg-edit
+
+    &__reg-edit {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+        color: #437FC8;
+        padding: 0 0 0 27px;
+        text-decoration: none;
+        position: relative;
+        &::before {
+            content: '';
+            left: 0;
+            top: 0;
+            z-index: 1;
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            background-image: url('../img/user-info-change-icon.svg');
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 21px 21px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .edit-profile__right
+
+    &__right {
+        flex: 0 1 auto;
+        width: 362px;
+        margin-left: 50px;
+        @media screen and (max-width: 991px){
+            margin-left: 0;
+            margin-top: 20px;
+            width: 50%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    // .edit-profile__change-password-item
+
+    &__change-password-item {
+        padding: 10px 0 0 0;
+    }
+
+    // .edit-profile__change-password-label
+
+    &__change-password-label {
+        font-size: 14px;
+        line-height: 35px;
+        color: #999999;
+        display: block;
+    }
+
+    // .edit-profile__change-password-input
+
+    &__change-password-input {
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        outline: none;
+        height: 45px;
+        line-height: 45px;
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    // .edit-profile__save-button
+
+    &__save-button {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        border: 2px solid #437FC8;
+        background-color: #437FC8;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 8px 30px;
+        cursor: pointer;
+        margin: 25px auto 0 auto;
+        width: 214px;
+        text-align: center;
+        &:hover {
+            background-color: #FFFFFF;
+            color: #437FC8;
+            transition: all .7s;
+        }
+    }
+}

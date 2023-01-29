@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecity</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    @@include('_header.html')
+    @@include('_breadcrumbs.html')
+
+    <section class="order-list">
+        <div class="container">
+            @@include('_user-menu.html')
+            <h1 class="order-list__title">Мой профиль</h1>
+            <div class="edit-profile">
+                <div class="edit-profile__user-info">
+                    <div class="edit-profile__ui-img">
+                        <img src="img/user-avatarka.jpg" alt="">
+                    </div>
+                    <div class="edit-profile__ui-title">
+                        <div class="edit-profile__ui-name">
+                            Парфенов Андрей
+                        </div>
+                        <a class="edit-profile__change-ui" href="#">Загрузить фото</a>
+                    </div>
+                </div>
+                <div class="edit-profile__info">
+                    <div class="edit-profile__left">
+                        <h2 class="edit-profile__info-title">Учетные данные</h2>
+                        <div class="edit-profile__reg-info">
+                            <div class="edit-profile__reg-item">
+                                <label class="edit-profile__reg-label" for="">ФИО</label>
+                                <div class="edit-profile__reg-data">Парфенов Андрей Витальевич</div>
+                                <a class="edit-profile__reg-edit" href="#">Редактировать</a>
+                            </div>
+                            <div class="edit-profile__reg-item">
+                                <label class="edit-profile__reg-label" for="">Email</label>
+                                <div class="edit-profile__reg-data">parfenov@gmail.com</div>
+                                <a class="edit-profile__reg-edit" href="#">Редактировать</a>
+                            </div>
+                            <div class="edit-profile__reg-item">
+                                <label class="edit-profile__reg-label" for="">Адрес</label>
+                                <div class="edit-profile__reg-data">г. Москва, ул. Набережная 42-77</div>
+                                <a class="edit-profile__reg-edit" href="#">Редактировать</a>
+                            </div>
+                            <div class="edit-profile__reg-item">
+                                <label class="edit-profile__reg-label" for="">Телефон</label>
+                                <div class="edit-profile__reg-data">+795 25 356 25 87</div>
+                                <a class="edit-profile__reg-edit" href="#">Редактировать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-profile__right">
+                        <h2 class="edit-profile__info-title">Изменить пароль</h2>
+                        <div class="edit-profile__change-password-item">
+                            <label class="edit-profile__change-password-label" for="">Введите старый пароль</label>
+                            <input class="edit-profile__change-password-input" type="password">
+                        </div>
+                        <div class="edit-profile__change-password-item">
+                            <label class="edit-profile__change-password-label" for="">Введите новый пароль</label>
+                            <input class="edit-profile__change-password-input" type="password">
+                        </div>
+                        <a class="edit-profile__save-button" href="#">Изменить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+    
+    @@include('_footer.html')
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
