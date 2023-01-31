@@ -223,4 +223,9 @@ $(function() {
         $(this).children('.category-filter__list').slideToggle();
 	});
 
+    $('.header__profile-link').click(function(e){
+        e.preventDefault();
+        $(this).next('.header-user-menu').slideToggle();
+	});
+
 });
