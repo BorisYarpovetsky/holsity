@@ -218,4 +218,9 @@ $(function() {
         ]
     });
 
+    $('.category-filter').click(function(e){
+        e.preventDefault();
+        $(this).children('.category-filter__list').slideToggle();
+	});
+
 });
