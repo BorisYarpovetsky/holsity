@@ -228,4 +228,8 @@ $(function() {
         $(this).next('.header-user-menu').slideToggle();
 	});
 
+    $('.header__cart-link').click(function(e){
+        e.preventDefault();
+	});
+
 });
