@@ -232,4 +232,38 @@ $(function() {
         e.preventDefault();
 	});
 
+    $('.header__all-category-link').click(function(e){
+        e.preventDefault();
+        $('#navi-category').slideToggle();
+        $(this).toggleClass('header__all-category-link-active');
+	});
+
+    let navItem = $('.navi-category__navi-link');
+    let windowsWidth;
+    let categoryNum;
+    let categoryMenuTimer;
+
+    navItem.each(function(i, el){
+        $(el).on({
+            mouseenter: function(){
+                clearTimeout(categoryMenuTimer);
+                categoryMenuTimer = setTimeout(function(){
+                    categoryNum = $(el).attr('data-attribute');
+                    $('.navi-category__navi-content').hide();
+                    $('.navi-category__nc-'+categoryNum).show('fade', 300);
+                }, 300);
+            },
+            mouseleave: function(){
+                clearTimeout(categoryMenuTimer);
+            },
+            click: function(event){
+                windowsWidth = $(window).whidth();
+                if(windowsWidth <= 768) {
+                    event.preventDefault();
+                }
+            }
+        });
+    });
+    
+
 });
