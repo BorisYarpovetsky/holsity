@@ -1,0 +1,57 @@
+.change-city-popup {
+
+    // .change-city-popup__title
+
+    &__title {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #1E1E1E;
+        margin-bottom: 15px;
+    }
+
+    // .change-city-popup__input
+
+    &__input {
+        display: block;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin-bottom: 15px;
+        outline: none;
+        &::placeholder {
+            color: #999999;
+        }
+    }
+
+    // .change-city-popup__list
+
+    &__list {
+        display: block;
+        list-style: none;
+    }
+
+    // .change-city-popup__item
+
+    &__item {
+        display: block;
+        padding: 7px 0;
+    }
+
+    // .change-city-popup__link
+
+    &__link {
+        font-size: 16px;
+        line-height: 25px;
+        color: #1E1E1E;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

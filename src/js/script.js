@@ -1,8 +1,12 @@
 @@include('jquery-3.6.2.min.js')
 @@include('slick.js')
 @@include('jquery-ui.js')
+@@include('jquery.magnific-popup.js')
+@@include('jquery.mask.js')
 
 $(function() {
+
+    $('.popup-form__mask-phone-number').mask('+7-000-000-00-00');
 
     $(window).scroll(function(){
 		if($(window).scrollTop() > 100) {
@@ -264,6 +268,20 @@ $(function() {
             }
         });
     });
-    
 
+    $('.popup-open-modal').magnificPopup({
+        type:'inline',
+        midClick: true,
+        mainClass: 'mfp-fade',
+		removalDelay: 160,
+    });
+
+    $('.popup-form__input-sms').keyup(function(){
+        if($(this).val().length == '1'){
+            $(this).next('.popup-form__input-sms').focus();
+        } else if ($(this).val().length == '0'){
+            $(this).prev('.popup-form__input-sms').focus();
+        }
+    });
+    
 });
