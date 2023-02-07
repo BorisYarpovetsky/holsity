@@ -64,6 +64,19 @@ body {
     }
 }
 
+.search-popup-bg {
+    position: relative;
+    background: #ffffff;
+    padding: 23px 34px;
+    width: auto;
+    max-width: 1400px;
+    margin: 60px auto 0 auto;
+    border-radius: 5px;
+    @media screen and (max-width: 768px) {
+       padding: 15px 15px;
+    }
+}
+
 .white-popup {
     position: relative;
     background: #ffffff;
@@ -71,7 +84,21 @@ body {
     width: auto;
     max-width: 500px;
     margin: 20px auto;
-    border-radius: 5px
+    border-radius: 5px;
+}
+
+.fast-view-popup-bg {
+    position: relative;
+    background: #ffffff;
+    padding: 36px 40px 50px 40px;
+    width: auto;
+    max-width: 950px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.super-z-index {
+    z-index: 2900!important;
 }
 
 .mfp-fade.mfp-bg {
@@ -138,4 +165,6 @@ body {
 @import "el-header-user-menu";
 @import "el-header-cart";
 @import "change-city-popup";
-@import "popup-form"
+@import "popup-form";
+@import "popup-fast-view";
+@import "popup-search";
