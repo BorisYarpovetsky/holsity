@@ -1,67 +1,67 @@
 .fast-view {
-   // .fast-view__header
-
-   &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 22px;
-    flex-wrap: wrap;
-
-    .full-item__info-a {
+    // .fast-view__header
+ 
+    &__header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 22px;
+     flex-wrap: wrap;
+ 
+     .full-item__info-a {
         padding-bottom: 10px;
-    }
-
-    .full-item__compare {
+     }
+ 
+     .full-item__compare {
         display: flex;
         flex-wrap: wrap;
         @media screen and (max-width: 768px) {
             flex-direction: column;
         }
-    }
-
-    .full-item__add-compare {
+     }
+ 
+     .full-item__add-compare {
         @media screen and (max-width: 768px) {
             margin-bottom: 20px;
             flex: 0 0 auto;
             padding-right: 30px;
         }
-    }
-    
-    .full-item__code-item {
+     }
+     
+     .full-item__code-item {
         @media screen and (max-width: 768px) {
             margin-left: 0;
         }
+     }
     }
-   }
-
-   // .fast-view__price-wrapper
-
-   &__price-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 62px;
-   }
-
-   // .fast-view__content
-
-   &__content {
+ 
+    // .fast-view__price-wrapper
+ 
+    &__price-wrapper {
+     display: flex;
+     flex-direction: column;
+     margin-top: 62px;
+    }
+ 
+    // .fast-view__content
+ 
+    &__content {
         display: flex;
         @media screen and (max-width: 991px) {
             flex-direction: column;
         }
     }
-
+ 
     // .fast-view__button
-
-    &__button {
+ 
+     &__button {
         text-align: center;
         margin-top: 40px;
     }
-
+ 
     // .fast-view__show-mpre-link
-
-    &__show-mpre-link {
+ 
+     &__show-mpre-link {
         display: inline-block;
         border: 2px solid #437fc8;
         background-color: #437fc8;
@@ -79,10 +79,10 @@
             transition: all .7s;
         }
     }
-
+ 
     // .fast-view__slider
-    
-    &__slider {
+     
+     &__slider {
         width: 464px;
         min-width: 464px;
         flex: 0 0 auto;
@@ -93,10 +93,10 @@
             margin-bottom: 20px;
         }
     }
-
+ 
     // .fast-view__description 
-    
-    &__description {
+     
+     &__description {
         flex: 1 0 auto;
         padding: 20px 0 20px 20px;
         width: 100%;

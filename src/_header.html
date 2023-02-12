@@ -1,8 +1,9 @@
-<!-- <div id="header-block" class="header-block__hide-show"></div> -->
-<header class="header">
+<div id="header-block" class="header-block__hide-show"></div>
+<header class="header" id="header">
     <div class="header__top">
         <div class="container">
             <div class="header__top-wrapper">
+                <a class="header__mb-menu-close" href="#"></a>
                 <div class="header__location">
                     <a class="header__location-link popup-open-modal" href="#change-city-popup">Москва</a>
                 </div>
@@ -26,7 +27,7 @@
                         <li class="header__topNav-item">
                             <a class="header__topNav-link" href="#">Доп. сервис</a>
                         </li>
-                        <li>
+                        <li class="header__topNav-item">
                             <a class="header__topNav-link" href="#">Наши гарантии</a>
                         </li>
                         <li class="header__topNav-item">
@@ -39,20 +40,62 @@
                             <a class="header__topNav-link" href="#">Оставить обращение</a>
                         </li>
                     </ul>
+                    <div class="header__more-menu">
+                        <a class="header__more-menu-link" href="#">Еще</a>
+                        <ul class="header__topNav-menu2">               
+                            <li class="header__topNav-item2">
+                                <a class="header__topNav-link2 popup-open-modal" href="#">Оплата</a>
+                            </li>
+                            <li class="header__topNav-item2">
+                                <a class="header__topNav-link2" href="#">Подключение техники</a>
+                            </li>
+                            <li class="header__topNav-item2">
+                                <a class="header__topNav-link2 popup-open-modal" href="#">Доп. сервис</a>
+                            </li>
+                            <li class="header__topNav-item2">
+                                <a class="header__topNav-link2 popup-open-modal" href="#">Наши гарантии</a>
+                            </li>
+                            <li class="header__topNav-item2">
+                                <a class="header__topNav-link2 popup-open-modal" href="#">Почему мы?</a>
+                            </li>
+                            <li class="header__topNav-item2">
+                                <a class="header__topNav-link2 popup-open-modal" href="#">Контакты</a>
+                            </li>
+                            <li class="header__topNav-item2">
+                                <a class="header__topNav-link2 popup-open-modal" href="#">Оставить обращение</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="header__user-profile">
-                    <a class="header__profile-link" href="#">Личный кабинет</a>
-                    <div class="header-user-menu">
-                        <a class="header-user-menu__item header-user-menu__item-active" href="#">Личный кабинет</a>
-                        <a class="header-user-menu__item" href="#">Настройки</a>
-                        <a class="header-user-menu__item" href="#">Сообщения <span class="header-user-menu__num">2</span></a>
-                        <a class="header-user-menu__item" href="#">Избранное</a>
-                        <a class="header-user-menu__item" href="#">Мои заказы</a>
-                        <a class="header-user-menu__item header-user-menu__exit popup-open-modal" href="#popup-auth">Войти</a>
+                <div class="header__top-social2">
+                    <div class="header__social2">
+                        <a class="header__social-item2" href="viber://chats">
+                            <img src="img/viber.svg" alt="Viber">
+                        </a>
+                        <a class="header__social-item2" href="tg://join?">
+                            <img src="img/telegram.svg" alt="Telegram">
+                        </a>
+                    </div>
+                    <div class="header__user-profile">
+                        <a class="header__profile-link" href="#">Личный кабинет</a>
+                        <div class="header-user-menu">
+                            <a class="header-user-menu__item header-user-menu__item-active" href="#">Личный кабинет</a>
+                            <a class="header-user-menu__item" href="#">Настройки</a>
+                            <a class="header-user-menu__item" href="#">Сообщения <span class="header-user-menu__num">2</span></a>
+                            <a class="header-user-menu__item" href="#">Избранное</a>
+                            <a class="header-user-menu__item" href="#">Мои заказы</a>
+                            <a class="header-user-menu__item header-user-menu__exit popup-open-modal" href="#popup-auth">Войти</a>
+                        </div>
+                    </div>                                   
+                    <div class="header__cnt-mobile-phone">
+                        <a class="header__mobile-phone-link" href="tel:+74951509555">+7(495)150-95-55</a>
+                        <span class="header__contacts-time2">
+                            9:00 - 22:00 без выходных
+                        </span>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 
     <div class="header__center">
@@ -60,7 +103,9 @@
             <div class="header__center-wrapper">
                     <div class="header__center-left">
                         <div class="header__logo">
-                            <a class="header__logo-img" href="/"></a>
+                            <a class="header__logo-img" href="/">
+                                <img src="img/logo.jpg" alt="logo ">
+                            </a>
                         </div>
                         <div class="header__centerNav">
                             <ul class="header__centerNav-menu">
@@ -160,6 +205,13 @@
                         </div>
                     </div>
                 </div>
+                <a class="header__user-profile-link" href="#popup-auth"></a>
+                <a class="header__user-cart-link" href="#">
+                    <span class="header__cart-num">1</span>
+                </a>
+                <a class="header__mobile-main-menu-link" href="#">
+                    <span></span>
+                </a>
             </div>
         </div>
     </div>
@@ -231,7 +283,7 @@
 
     <div class="navi-category">
         <div class="navi-category__wrapper">
-            <div id="navi-category" class="navi-category__bg">
+            <div class="navi-category__bg" id="navi-category">
                 <div class="navi-category__content">
                     <ul class="navi-category__navi">
                         <li class="navi-category__navi-item">

@@ -44,9 +44,6 @@
         border-top: 1px solid #E5E5E5;
         padding: 27px 17px 27px 17px;
         position: relative;
-        @media screen and (max-width: 768px) {
-            padding: 27px 0px 27px 0px;
-        }
         &:hover {
             background: #FFFFFF;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -57,7 +54,17 @@
             .short-item__fast-view {
                 display: block;
                 transition: all .9s;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
             }
+        }
+        @media screen and (max-width: 991px) {
+            border-top: 0 solid #E5E5E5;
+            width: 305px!important;
+        }
+        @media screen and (max-width: 768px) {
+            width: 200px!important;
         }
     }
 

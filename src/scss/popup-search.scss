@@ -41,6 +41,7 @@
         margin: 0;
         padding: 0;
         border: none;
+        outline: none;
     }
 
     // .search-popup__catgory-list
@@ -112,11 +113,11 @@
     &__product-image {
         width: 86px;
         height: 86px;
-        flex: 1 0 auto;
+        flex: 0 0 auto;
         display: flex;
         align-items: center;
-        justify-content: center;
         margin-right: 15px;
+        width: 40%;
     }
 
     // .search-popup__product-img
@@ -128,6 +129,7 @@
         max-width: 86px;
         max-height: 86px;
         margin: 0 auto;
+        padding-right: 15px;
     }
 
     // .search-popup__product-header
@@ -152,7 +154,6 @@
     &__product-social {
         margin-top: 10px;
         display: flex;
-        padding-left: 15px;
     }
 
     // .search-popup__product-right
