@@ -25,6 +25,8 @@
             position: fixed;
             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
             border-radius: 0;
+            overflow: scroll;
+            height: 100%;
         }
     }
 
@@ -33,8 +35,9 @@
     &__content {
         display: flex;
         @media screen and (max-width: 576px) {
+            display: block;
             position: relative;
-            padding: 50px 0 37px 0;
+            padding: 0 0 37px 0;
         }
     }
 
@@ -51,7 +54,7 @@
         padding: 15px 0;
         @media screen and (max-width: 576px) {
             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-            width: 100%;
+            max-width: 100%;
             border-radius: 0px 0px 0px 0px;
             padding: 0 0;
             border-top: 1px solid #E5E5E5;
@@ -80,6 +83,14 @@
             background-color: #DCE9F8;
             transition: all .7s;
         }
+        @media screen and (max-width: 576px) {
+            background-image: url('../img/arrow-mobile-menu-next.svg');
+            background-position: right 18px top 21px;
+            background-repeat: no-repeat;
+            font-size: 15px;
+            line-height: 18px;
+            padding: 15px 15px 15px 17px;
+        }
     }
 
     // .navi-category__navi-link-active
@@ -96,6 +107,18 @@
         display: none;
         padding: 15px 50px 15px 20px;        
         flex: 1 1 auto;
+        @media screen and (max-width: 576px) {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            background-color: #fff;
+            padding: 0 0 30px 0; 
+            min-height: 100%;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
     }
 
     // .navi-category__adw-menu
@@ -104,7 +127,10 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        margin-bottom: 15px;    
+        margin-bottom: 15px;
+        @media screen and (max-width: 576px) {
+            display: none;
+        }    
     }
 
     // .navi-category__adw-menu-item
@@ -127,11 +153,15 @@
         }
     }
 
-    // .navi-category_submenu
+    // .navi-category__submenu
 
-    &_submenu {
+    &__submenu {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 576px) {
+            border-top: 1px solid #E5E5E5;
+            padding: 15px 15px 0 15px;
+        }
     }
 
     // .navi-category__category-list
@@ -149,6 +179,9 @@
         flex-wrap: wrap;
         height: 600px;
         width: 100%;
+        @media screen and (max-width: 576px) {
+            height: auto;
+        }
     }
 
     // .navi-category__category-item
@@ -157,6 +190,9 @@
         display: block;
         width: 50%;
         margin-bottom: 21px;
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
     }
 
     // .navi-category__category-title
@@ -167,8 +203,37 @@
         line-height: 25px;
         color: #1E1E1E;
         text-decoration: none;
+        position: relative;
         &:hover {
             text-decoration: underline;
+        }
+        @media screen and (max-width: 576px) {
+            display: block;
+            padding-right: 30px;
+        }
+        &::after {
+            display: none;
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 12px;
+            width: 12px;
+            height: 8px;
+            z-index: 1;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-image: url(../img/di-show.svg);
+            transform: rotate(180deg) translateY(50%);
+            transition: all .7s;
+            @media screen and (max-width: 576px) {
+                display: block;
+            }            
+        }
+
+        &.navi-category__category-title-active {
+            &::after {
+                transform: rotate(0deg) translateY(-50%);
+            }
         }
     }
 
@@ -177,6 +242,10 @@
     &__subcategory-navi {
         display: block;
         list-style: none;
+        @media screen and (max-width: 576px) {
+            display: none;
+            padding-top: 15px;
+        }
     }
 
     // .navi-category__subcategory-item
@@ -185,7 +254,7 @@
         display: block;
         font-size: 14px;
         line-height: 25px;
-        color: #404040;
+        color: #404040;        
     }
 
     // .navi-category__subcategory-link
@@ -204,6 +273,9 @@
 
     &__submenu-banner {
         flex: 0 0 auto;
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
     }
 
     // .navi-category__banner-link
@@ -272,6 +344,72 @@
             background-color: #FFFFFF;
             color:#437FC8;
             transition: all .7s;
+        }
+    }
+
+    // .navi-category__mobile-back-to-menu
+
+    &__mobile-back-to-menu {
+        display: none;
+        height: 50px;
+        font-size: 15px;
+        line-height: 50px;
+        color: #595959;
+        text-decoration: none;
+        padding-left: 53px;
+        position: relative;
+        background-image: url('../img/menu-close.svg');
+        background-position: right 17px top 17px;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 576px) {
+            display: block;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 8px;
+            position: absolute;
+            left: 17px;
+            top: 21px;
+            z-index: 1;
+            background-image: url('../img/arrow-mobile-menu-next.svg');
+            background-position: left top;
+            background-repeat: no-repeat;
+            transform: rotate(180deg);
+        }
+    }
+
+    // .navi-category__mobile-back-all-category
+
+    &__mobile-back-all-category {
+        display: none;
+        height: 50px;
+        font-size: 15px;
+        line-height: 50px;
+        color: #595959;
+        text-decoration: none;
+        padding-left: 53px;
+        position: relative;
+        background-image: url('../img/menu-close.svg');
+        background-position: right 17px top 17px;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 576px) {
+            display: block;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 8px;
+            position: absolute;
+            left: 17px;
+            top: 21px;
+            z-index: 1;
+            background-image: url('../img/arrow-mobile-menu-next.svg');
+            background-position: left top;
+            background-repeat: no-repeat;
+            transform: rotate(180deg);
         }
     }
 }
