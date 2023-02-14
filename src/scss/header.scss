@@ -12,6 +12,9 @@
 
 .header {
 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+
     // .header__fixed-header
 
     &__fixed-header {
@@ -21,7 +24,6 @@
         z-index: 200;
         width: 100%;
         background-color: #fff;
-        box-shadow: 0 40px 20px rgba(0, 0, 0, 0.1);
     }   
 
     // .header__top
