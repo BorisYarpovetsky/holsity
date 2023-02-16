@@ -25,6 +25,11 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            @media screen and (max-width: 576px){
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 500;
+            }
         }
     
         h1 img, h2 img, h3 img, h4 img {
@@ -51,6 +56,9 @@
                     z-index: 1;
                     border-radius: 50%;
                 }
+                @media screen and (max-width: 576px) {
+                    display: none;
+                }
             }
         }
     
@@ -60,6 +68,9 @@
             padding-left: 25px;
             li {
                 padding-left: 10px;
+            }
+            @media screen and (max-width: 576px) {
+                display: none;
             }
         }
     }    

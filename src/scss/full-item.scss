@@ -28,7 +28,18 @@
 
     // .full-item__compare
 
-    &__compare {        
+    &__compare {   
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        .short-item__add-link {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
     }
 
     // .full-item__add-compare
@@ -62,6 +73,9 @@
             flex-direction: column;
             align-items: flex-start;
         }
+        @media screen and (max-width: 576px) {
+            flex-direction: row;
+        }
     }
 
     // .full-item__info-a
@@ -70,6 +84,10 @@
         flex: 0 0 auto;
         span {
             margin-right: 21px;
+        }
+        @media screen and (max-width: 576px) {
+            order: 3;
+            margin-bottom: 10px;
         }
     }
 
@@ -81,6 +99,11 @@
         @media screen and (max-width: 768px) {
             margin-top: 10px;
         }
+        @media screen and (max-width: 576px) {
+            margin-right: 15px;
+            margin-bottom: 10px;
+            order: 1;
+        }
     }
 
     // .full-item__info-c
@@ -90,7 +113,23 @@
         @media screen and (max-width: 768px) {
             margin-left: 0;
             margin-top: 10px;
-        }      
+        }    
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &__info-d {        
+        margin-left: 49px; 
+        @media screen and (max-width: 768px) {
+            margin-left: 0;
+            margin-top: 10px;
+        }    
+        @media screen and (max-width: 576px) {
+            margin-bottom: 10px;
+            margin-right: 15px;
+            order: 2;
+        }  
     }
 
     // .full-item__in-stock
@@ -268,6 +307,9 @@
             max-width: 100%;
             padding: 0 0 20px 0;
         }
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
     }
 
     // .full-item__table
@@ -415,6 +457,9 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+        }
     }
 
     // .full-item__price-new
@@ -436,6 +481,9 @@
         color: #6E6E6E;
         margin-left: 30px;
         margin-bottom: 26px;
+        @media screen and (max-width: 576px) {
+            margin-left: 0;
+        }
     }
 
     // .full-item__buy
@@ -445,6 +493,9 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+        }
     }
 
     // .full-item__buy-click
@@ -461,6 +512,10 @@
         @media screen and (max-width: 991px) {
             flex: 0 0 auto;
             margin-right: 40px;
+        }
+        @media screen and (max-width: 576px) {
+            margin-right: 0;
+            margin-bottom: 30px;
         }
     }
 
@@ -482,6 +537,9 @@
             color: #437FC8;
             border: 2px solid #437FC8;
             transition: all .7s;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 14px;
         }
     }
 
@@ -735,6 +793,9 @@
         }
         li {
             margin-right: 25px;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 15px;
+            }
         }
         li.ui-tabs-active {
             position: relative;            

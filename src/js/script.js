@@ -8,6 +8,31 @@ $(function() {
 
     $('.popup-form__mask-phone-number').mask('+7-000-000-00-00');
 
+    $('.index-catalog__wrapper, .full-item__recommendation-wrapper,.full-item__present-wrapper, .full-item__more-buy-wrapper, .later-list__content').slick({
+        arrows: false,
+        slidesToShow: 1,        
+        infinite: false,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 4000,
+                settings: "unslick",
+            },
+        ]
+    });
+
     $(window).scroll(function(){
 		if($(window).scrollTop() > 100) {
 			$('#arrow-top-page').fadeIn(700);
@@ -312,32 +337,7 @@ $(function() {
         $('html, body').stop().animate({
             scrollTop: $(anchor).offset().top - 150
         }, 800);
-    });
-
-    $('.index-catalog__wrapper').slick({
-        arrows: false,
-        slidesToShow: 1,        
-        infinite: false,
-        variableWidth: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 4000,
-                settings: "unslick",
-            },
-        ]
-    });
+    });    
 
     $(".header__more-menu-link").on("click",function(e){
         e.preventDefault();
@@ -383,6 +383,19 @@ $(function() {
             e.preventDefault();
             $(this).next('.catalog-list__category-nav').slideToggle('fast');
             $(this).toggleClass('catalog-list__category-title-active');
+        }
+	});
+
+    let breadcrumbsMobile = $('.breadcrumbs__wrapper a')
+    console.log(breadcrumbsMobile.length);
+    breadcrumbsMobile.eq(breadcrumbsMobile.length - 1).css('display', 'inline-block').addClass('breadcrumbs__link-mobile');
+
+    $('.return__mobile-slide').click(function(e){
+        windowsWidth = $(window).width();
+        if(windowsWidth <= 576) {
+            e.preventDefault();
+            $(this).next('.return__mobile-wrapper').slideToggle('fast');
+            $(this).toggleClass('return__mobile-slide-active');
         }
 	});
     

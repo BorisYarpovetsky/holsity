@@ -1,0 +1,39 @@
+.return {
+
+    // .return__mobile-slide
+
+    &__mobile-slide {
+        position: relative;
+        &::after {   
+            display: none;             
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 12px;
+            width: 12px;
+            height: 8px;
+            z-index: 1;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-image: url('../img/di-show.svg');
+            transform: rotate(180deg) translateY(50%);
+            transition: all .7s;
+            @media screen and (max-width: 576px) {
+                display: block;
+            }  
+        }
+        &.return__mobile-slide-active {
+            &::after {
+                transform: rotate(0) translateY(-50%);
+            }
+        }      
+    }
+
+    // .return__mobile-wrapper
+
+    &__mobile-wrapper {
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+    }
+}

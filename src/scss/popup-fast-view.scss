@@ -1,4 +1,5 @@
 .fast-view {
+
     // .fast-view__header
  
     &__header {
@@ -7,17 +8,16 @@
      justify-content: space-between;
      margin-bottom: 22px;
      flex-wrap: wrap;
+     @media screen and (max-width: 576px) {
+        margin-bottom: 0;
+     }
  
      .full-item__info-a {
         padding-bottom: 10px;
      }
  
      .full-item__compare {
-        display: flex;
-        flex-wrap: wrap;
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-        }
+        padding-bottom: 15px;
      }
  
      .full-item__add-compare {
@@ -29,8 +29,9 @@
      }
      
      .full-item__code-item {
-        @media screen and (max-width: 768px) {
-            margin-left: 0;
+        @media screen and (max-width: 576px) {
+            margin-left: 15px;
+            margin-right: 15px;
         }
      }
     }
