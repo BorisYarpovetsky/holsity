@@ -254,7 +254,7 @@ $(function() {
         ]
     });
 
-    $('.category-filter').click(function(e){
+    $('.category-filter__sort-list').click(function(e){
         e.preventDefault();
         $(this).children('.category-filter__list').slideToggle('fast');
 	});
@@ -397,6 +397,16 @@ $(function() {
             $(this).next('.return__mobile-wrapper').slideToggle('fast');
             $(this).toggleClass('return__mobile-slide-active');
         }
+	});
+
+    $('.category-items__mobile-filter-link').click(function(e){
+        e.preventDefault();
+        $('.category-page__filter').show('fast');
+	});
+
+    $('.category-filter__close-link').click(function(e){
+        e.preventDefault();
+        $('.category-page__filter').hide('fast');
 	});
     
 });
