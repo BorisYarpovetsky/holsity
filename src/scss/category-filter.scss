@@ -44,6 +44,12 @@
         font-size: 16px;
         line-height: 35px;
         color: #437FC8;
+        padding-right: 40px;
+        @media screen and (max-width: 576px) {
+            padding-bottom: 80px;
+            margin-top: 0;
+            padding-right: 0;
+        }
     }
 
     // .category-filter__more-link
@@ -51,6 +57,10 @@
     &__more-link {
         text-decoration: none;
         color: #437FC8;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 22px;
         &:hover {
             text-decoration: underline;
         }
@@ -65,6 +75,14 @@
         border-radius: 5px;
         align-items: center;
         margin-top: 40px;
+        @media screen and (max-width: 576px) {
+            margin-top: 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+            width: 100%;
+        }
     }
 
     // .category-filter__result-name
@@ -119,14 +137,25 @@
         color: #404040;
         text-decoration: none;
         margin-top: 10px;
+        position: relative;
         &:hover {
             background-color: #CECECE;
             color: #fff;
             transition: all 0.5s;
         }
-        background-image: url('../img/arrow-riaght.svg');
-        background-position: center;
-        background-repeat: no-repeat;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 2px;
+            z-index: 1;
+            width: 20px;
+            height: 0;
+            background-image: url('../img/arrow-riaght.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 13px 58px 16px 36px;
+        }
     }
 
     input[type="text"] {
@@ -237,5 +266,36 @@
             background-position: right 17px top 17px;
             background-repeat: no-repeat;
         }
+    }
+
+    // .category-filter__small-hieght
+
+    &__small-hieght {
+        height: 1000px;
+        overflow: hidden;
+    }
+
+    // .category-filter__find
+
+    &__find {
+        width: 100%;
+    }
+
+    // .category-filter__find-btn
+
+    &__find-btn {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        border: none;
+        background-color: #7FB1ED;
+        border-radius: 5px;
+        width: 180px;
+        height: 45px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        color: #fff;
     }
 }

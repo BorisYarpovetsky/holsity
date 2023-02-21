@@ -224,9 +224,6 @@
         flex: 0 1 auto;
         width: 100%;
         max-width: 600px;
-        @media screen and (max-width: 1300px){
-            max-width: 400px;
-        }
     }
 
     // .order-list__item-slider
@@ -263,10 +260,14 @@
         }
     }
 
-    // .order-list__item-slider-item
+    // .order-list__slider-item
 
-    &__item-slider-item {
+    &__slider-item {
         padding-right: 15px;
+        max-width: 200px;
+        @media screen and (max-width: 768px) {
+            max-width: 150px;
+        }
     }
 
     // .order-list__slider-link

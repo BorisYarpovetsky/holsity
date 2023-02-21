@@ -205,6 +205,7 @@ $(function() {
     $('.order-list__item-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        variableWidth: true,
         arrows: true,
         responsive: [
             {
@@ -407,6 +408,22 @@ $(function() {
     $('.category-filter__close-link').click(function(e){
         e.preventDefault();
         $('.category-page__filter').hide('fast');
+	});
+
+    $('.compare-info__compare-fixed-clear').click(function(e){
+        e.preventDefault();
+        $('.compare-info').hide('fast');
+	});
+
+    $('.category-filter__more-link').click(function(e){
+        e.preventDefault();
+        $(this).hide('fast');
+        $('.category-filter').removeClass('category-filter__small-hieght');
+	});
+
+    $('.category-filter__result-clear').click(function(e){
+        e.preventDefault();
+        $('.category-filter__result').hide('fast');
 	});
     
 });
