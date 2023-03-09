@@ -61,12 +61,12 @@
         }
         @media screen and (max-width: 991px) {
             border-top: 0 solid #E5E5E5;
-            width: 305px;
-            max-width: 305px;
+            width: 100%;
+            max-width: 100%;
         }
         @media screen and (max-width: 768px) {
-            width: 200px;
-            max-width: 200px;
+            width: 100%;
+            max-width: 100%;
         }
     }
 
@@ -363,6 +363,7 @@
         flex: 0 1 auto;
         @media screen and (max-width: 768px) {
             max-width: 150px;
+			margin-right: 15px;
         }
     }
 
@@ -376,6 +377,9 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+		@media screen and (max-width: 768px) {
+            max-width: 150px;
+        }
     }
     
 

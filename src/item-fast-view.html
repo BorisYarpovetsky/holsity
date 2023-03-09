@@ -123,7 +123,7 @@
                             <s class="full-item__price-old">18 000 ₽</s>
                         </div>
                         <div class="full-item__buy">
-                            <a class="full-item__buy-click popup-open-modal" href="#popup-buy-one-click">
+                            <a class="full-item__buy-click popup-open-modal fast_popup" href="#popup-buy-one-click">
                                 Купить в 1 клик
                             </a>
                             <a class="full-item__add-to-cart-buy" href="#">
@@ -138,6 +138,9 @@
             <a class="fast-view__show-mpre-link" href="#">Больше информации о товаре</a>
         </div>             
     </div>
+	<div class="white-popup mfp-hide mfp-fade" id="popup-buy-one-click">
+		@@include('_popup-buy-one-click.html')
+	</div>
 
     <script src="js/script.min.js"></script>
     <script>
@@ -177,15 +180,18 @@
                 ]
             });
 
-            $('.popup-open-modal').magnificPopup({
-                type:'inline',
+            $('.popup-open-modal.fast_popup').magnificPopup({
+                callbacks: {
+					open: function(){
+						$('.mfp-wrap').css("overflow", "initial");
+						$('.mfp-wrap').removeAttr('tabindex');
+					},
+				},
+				type:'inline',
                 midClick: true,
                 mainClass: 'super-z-index mfp-fade',
                 removalDelay: 160,
             });
         });
     </script>
-</div>
-<div class="white-popup mfp-hide mfp-fade" id="popup-buy-one-click">
-    @@include('_popup-buy-one-click.html')
 </div>
