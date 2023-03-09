@@ -1,4 +1,4 @@
-# Проект интернет-магазина Elecity
+# Проект интернет-магазина HOLSITY
 
 Установка:
 1. git clone https://github.com/courses2021/holsity
