@@ -2,8 +2,11 @@
 @@include('slick.js')
 @@include('jquery-ui.js')
 @@include('jquery.magnific-popup.js')
+@@include('jquery.mask.js')
 
 $(function() {    
+
+    $('.popup-form__mask-phone-number').mask('+7-000-000-00-00');
 
     $('.index-catalog__wrapper, .full-item__recommendation-wrapper,.full-item__present-wrapper, .full-item__more-buy-wrapper, .later-list__content').slick({
         arrows: false,
