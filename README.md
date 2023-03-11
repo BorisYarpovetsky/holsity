@@ -1,7 +1,7 @@
-# Проект интернет-магазин Elecity
+# Проект интернет-магазина HOLSITY
 
 Установка:
-1. git clone https://github.com/courses2021/elecity
+1. git clone https://github.com/courses2021/holsity
 2. npm i
 
 Команды:<br>
